@@ -1,0 +1,6 @@
+.menu-box__item {
+    list-style: none;
+}
+.menu-box__item a {
+    color: black;
+}

@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 16px 'Open Sans', sans-serif;
+}
+body{
+
+}
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+    max-width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-1 {
+    width: 8.333333333333333%;
+}
+.col-2 {
+    width: 16.66666666666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+}
+
+.col-8 {
+  width: 66.66666666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333333333333%;
+}
+
+.col-11 {
+  width: 91.66666666666667%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/* ================ top-row =========== */
+.top-box {
+  background: #eeeeee;
+  padding-bottom: 100px;
+}
+.top-row {
+    margin-bottom: 90px;
+}
+.top-header {
+  padding-top: 44px;
+   padding-left: 20px;
+  font-size: 3rem;
+}
+.top-nav {
+  padding-top: 68px;
+  text-align: right;
+}
+.nav-box {
+  display: inline-block;
+ }
+.nav-box__item {
+  display: inline-block;
+   vertical-align: middle;
+   margin-right: 40px;
+}
+.nav-box__item:last-child {
+  margin-right: 0;
+}
+.nav-box__item  a {
+  color: #303030;
+  text-decoration: none;
+}
+.nav-box__item  a:hover {
+  text-decoration: underline;
+}
+
+/* ================ slider =========== */
+
+.row-slider {
+  margin-bottom: 65px;
+}
+.col-slider-content {
+  padding-right: 80px;
+}
+.slider__title {
+  font-size: 150px;
+  line-height: 1;
+  text-align: right;
+  margin-bottom: 28px;
+}
+
+.col-slider-content {
+  text-align: right;
+}
+.slider__content {
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-left: 40px;
+  padding-bottom: 12px;
+}
+.slider__link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e10011;
+  text-decoration: none;
+
+}
+
+.img-box__img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.slider-dotted {
+  text-align: center;
+}
+.slider-dotted__item {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: black;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+

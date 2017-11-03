@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML advanced</title>
+    <meta charset="utf-8">
+	<style>
+	body{font:30px 'courier new', serif;  }
+	#d1{
+		display:none; 
+		float:left;
+		width:200px;height:50px;
+		background:#cfc;
+	}
+	ul{
+		
+	}
+	li{
+		background:#fcf;
+	}
+	
+	</style>
+    </head>
+<!--
+Элементы со свойством dispaly:list-item если перед 
+ними находится плавающий блок ведут себя аналогично
+блочным элементам - то есть сами элементы не 
+замечают плавающий элемент, а их текстовые области
+обтекают  этот плавающий элемент
+-->	
+<body>
+	<div id="d1"></div>
+	<ul>
+		<li>Первый<br>элемент списка</li>
+		<li>Второй</li>
+		<li>Третий</li>
+		<li>Четвертый</li>
+		<li>Пятый</li>
+	</ul>
+	
+<!--
+	<div class="list">
+		<span>Первый<br> элемент списка</span>
+		<span>Второй</span>
+		<span>Третий</span>
+		<span>Четвертый</span>
+		<span>Пятый</span>
+	</div>
+ -->
+<!-- 
+Любые элементы можно сделать списком. 
+Для этого достаточно присвоить стили
+.list{
+	margin-left:40px;
+}
+.list span{
+	display:list-item;
+}
+ 	
+-->	
+</body>
+</html>

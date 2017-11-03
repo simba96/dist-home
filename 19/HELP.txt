@@ -1,0 +1,13 @@
+https://rubyinstaller.org/downloads/
+
+http://sass-lang.com/guide
+
+
+========================================================
+FileWatcher SASS in phpStorm
+
+
+Program                  C:\Ruby200-x64\bin\scss.bat
+Arguments                --no-cache --update $FileName$:$FileParentDir$/css/$FileNameWithoutExtension$.css
+WorkingDirectory         $FileDir$
+output path to refresh   $FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map

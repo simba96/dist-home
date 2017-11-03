@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Демо сайт </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Итерации</h2>
+<div id="result"></div>
+
+
+<script>
+
+/*
+var i = 0;
+while (i < 5)
+{
+    document.write("Итерация " + i +"<br>");
+    i++;
+}
+*/
+
+
+
+/* =====================  Цикл do-while* =====================  */
+/*
+var i = 0;
+do
+{
+    document.write("Итерация " + i +"<br />");
+    i++;
+}
+while (i < 15);
+*/
+
+/* 
+Цикл do {} while()  будет продолжаться   до тех пор пока пользователь
+не введет строку
+*/
+
+
+/*
+var answer;
+var flag = true;
+do{
+	answer = prompt("Введите свое имя");  // выводим диалоговое окно
+ 
+// если пользователь ничего не ввел, то ничего не делаем, и цикл начнет выполнятся снова 	
+	if(typeof answer == 'undefined' || answer == ""){  
+	}else{
+		document.write("Привет " + answer + "<br />");
+		flag = false;   //  если пользователь что-то ввел, то сбрасываем флаг чтобы прервать выполнение цикла
+	}	
+}while(flag);
+*/
+
+/*
+var num1 = prompt("Введите первое число"); // например 2
+var num2 = prompt("Введите второе  число");// например 3 
+document.write("Сумма чисел " + (num1 + num2) + "<br />"); //  выведет 23 (то есть переведет число в строку)
+*/
+
+/*
+var flag = true;
+do {
+	var num1 = parseInt( prompt("Введите первое число"));  // Переводим  строку в число с помощью метода parseInt()
+// если пользователь ничего не ввел или ввел строку, то метод parseInt() возвратит константу  NaN
+
+	if(isNaN(num1)) continue;  // если в num1 значение NaN, то начинаем цикл сначала
+
+	var flag1 = true;
+	do{
+		var num2 = parseInt( prompt("Введите второе  число"));
+		if(isNaN(num2)) continue; 
+		else flag = false;
+	}while(flag);
+
+document.write("Сумма чисел " + (num1 + num2) + "<br />"); 
+flag = false;
+
+} while(flag);
+
+*/
+
+
+</script>
+</div><!-- /.container -->
+</body>
+</html>

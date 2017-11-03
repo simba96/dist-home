@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+    <title> Тип String</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Cтроки в Java Sctipt</h2>
+<div id="result"></div> 
+<script>
+var st; // Не удалять
+
+// Символы Юникода, кодовые пункты которых  не умещаются в 16 бит,
+// кодируются в соответствии с правилами кодировки UTF-16 как
+// последовательности  -  «суррогатные пары») из двух 16-битных значений.
+// Это означает, что строка JavaScript, имеющая  длину, два 16-битных значения,
+// может представлять   единственный символ Юникода: 
+
+var p = "π"; // это 1 символ с 16-битным кодовым пунктом ОхОЗсО 
+var e = "𝑒"; // это 1 символ с 17-битным кодовым пунктом 0x1d452 
+document.write("<br>Символ " + p +" длиной "+ p.length); //содержит единственный 16-битный элемент 
+document.write("<br>Символ " + e +" длиной "+ e.length); //2 16-битные значения: "\ud835\udc52" 
+
+
+
+
+
+
+st = "Просто строка";
+document.write(st);
+
+//st = "Просто строка c\nпереносом\nна\nновую\nстроку ";
+//alert(st);
+
+//st = "Просто строка c слешем  \\ ";
+//document.write("<br>" + st);	  
+
+// st = "Просто строка c \"двойными\" и \'одинарными\' кавычками ";
+// document.write("<br>" + st);	  
+
+
+// st = "Cтрока c 16-ричным символом в  1-байтной кодировке  \x41";
+// document.write("<br>" + st);	  
+
+
+// st = "Просто строка c символом Unicode  \ufdfc";
+// document.write("<br>" + st);	  
+
+/* Длина строки - свойство length */
+
+/*
+document.write("<h1>Длина строки</h1>");
+st = "Строка со знаком sigma - \u03a3";
+document.write("<br>" + st.length);
+st = "\u03a3";
+document.write("<br>" + st.length);
+*/
+
+
+/* ============= Конкатенация строк =============== */
+/*
+document.write("<br><br><h1>Конкатенация строк</h1>");
+var lang = "Java";
+lang = lang + " Script";
+document.write("<br>" + lang);
+*/
+
+/*  Приведение  строк 
+   toString() - применима к типам numbers, Booleans, objects,strings;
+  - null  -> ничего
+  - undefined -> ничего
+  - true -> "true", false -> "false"
+  - 123  ->  "123"
+*/
+/*
+document.write("<br><br><h1>Приведение  строк методом toString()</h1>");
+var num = 11;
+document.write("<br>" + num.toString());
+var b = true;
+document.write("<br>" + b.toString());
+var num = 10;
+document.write("<br>" + num.toString());     
+document.write("<br>" + num.toString(2));     
+document.write("<br>" + num.toString(8));     
+document.write("<br>" + num.toString(10));     
+document.write("<br>" + num.toString(16));     
+*/
+
+
+/*  Приведение  строк функцией  String()
+- null  -> "null"
+ - undefined -> "undefined"
+ - true -> "true", false -> "false"
+ - 123  ->  "123"
+*/
+
+/*
+document.write("<br><br><h1>Приведение  строк  функцией String() </h1>");
+var value;
+document.write("<br>" + String(value));     //"undefined"
+value = 10;
+document.write("<br>" + String(value));       //"10"
+value = true;
+document.write("<br>" + String(value));     //"true"
+value = null;
+document.write("<br>" + String(value));     //"null"
+*/
+
+
+
+	  
+
+</script>
+</div> <!-- /.container -->
+</body>
+</html>

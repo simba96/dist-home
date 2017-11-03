@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+ <head>
+    <title>Побитные  операторы</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Побитные  операторы</h2>
+<div id="result"></div>
+<script>
+
+var num, result;  //  не удалять
+
+/* ==============  NOT   ================= */
+num = 25;
+result = ~num;
+document.write("<br> result = " + result);
+
+num = 25;
+result = ~num - 1;
+document.write("<br> result = " + result);
+
+/* ==============  AND  ================= */
+/*
+result = 25 & 3;
+document.write("<br> 25 & 3 = " + result); // 1 
+*/
+
+
+/* ==============  OR  ================= */
+/*
+result = 25 | 3;
+document.write("<br> 25 | 3  = " + result); // 27 
+*/
+
+/* ==============  XOR  ================= */
+/*
+result = 25 ^ 3;
+document.write("<br> 25 ^ 3 = " + result); // 26 
+*/
+
+
+/* ==============  Left Shift ================= */
+/*
+var val = 2;             // binary  = 10
+result = val << 5;        // binary  = 1000000  decimal  = 64
+document.write("<br> val = " + val); 
+document.write("<br> val << 5 = " + result); 
+*/
+
+/* ==============  Right Shift ================= */
+/*
+var val = 64;             // binary  = 1000000
+result = val >>  5;        // binary  = 10  decimal  = 2
+document.write("<br> val = " + val); 
+document.write("<br> val >> 5 = " + result); 
+*/
+
+
+/* ==============  Signed Right Shift ================= */
+/* 
+var val = 64;               
+result = val >>  5;         
+document.write("<br> val = " + val + " -------- val >> 5 = " + result); 
+var val = 64;             
+result = val >>>  5;      
+document.write("<br> val = " + val  + " -------- val >>> 5 = " + result); 
+
+
+
+
+var val = -64;               
+result = val >>  5;         
+document.write("<br> val = " + val + " -------- val >> 5 = " + result); 
+var val = -64;             
+result = val >>>  5;      
+document.write("<br> val = " + val  + " -------- val >>> 5 = " + result); 
+
+*/
+
+
+
+
+
+
+
+
+
+</script>
+</div><!-- /.container -->
+</body>
+</html>

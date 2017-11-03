@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Тип Boolean </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Тип Boolean </h2>
+<div id="result"></div> 
+<script>
+/*
+--------------------------------------------------------
+Тип        ! приводится в  true  ! приводится в  false |
+--------------------------------------------------------
+Boolean    !  true               !     false           |
+--------------------------------------------------------
+String     ! непустая строка     !       ""            | 
+--------------------------------------------------------
+Number     !  ненулевое число    !      0, NaN         |
+--------------------------------------------------------
+Object     ! любой   object      !       null          |
+--------------------------------------------------------
+Undefined  !   n/a               !     undefined       | 
+--------------------------------------------------------
+*/
+var test = null;
+//    test = "string";
+//    test = "";
+//	  test = "0";
+//    test = 22;
+//	  test = 0;
+
+var boolTest = Boolean(test);
+document.write("<br>" + boolTest);
+
+	  
+</script>
+
+</div> <!-- /.container-->
+</body>
+</html>

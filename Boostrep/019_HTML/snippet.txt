@@ -1,0 +1,384 @@
+Roboto+Slab -> 100
+
+Open+Sans -> 300,300italic
+======== SASS variables 
+
+$fontFamily: "https://fonts.googleapis.com/css?family=Roboto+Slab:100|Ubuntu:400,400i";
+$font-family-sans-serif: 'Ubuntu', sans-serif; 
+$font-family-serif: 'Roboto Slab', serif;
+
+$imgPath: "../i/";
+
+$blue: #34495e;
+$grey: #fefefe;
+$imgBorder: #dddddd;
+$servicesBgColor: #34495e; 
+$teamBgColor: #16a085;
+$contactBgColor: #c0392b;
+$btn-primary-bg: $blue;
+$btn-primary-border: #3c2e50;
+
+=========== style.scss
+@import "base/index";
+@if variable_exists(google-font) {
+  @import url($google-font);
+}
+
+@import "vendors/bootstrap/scss/bootstrap";
+
+@import "layout/index";
+
+==============  index.html
+
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/script.js"></script>
+
+
+============== Navbar
+<nav class="navbar bg-primary navbar-inverse fixed-top navbar-toggleable-md">
+	  <h1 class="navbar-brand">Portfolio</h1>
+
+		<!--  BUTTON -->
+    
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="topMenu">
+	        <div class="navbar-nav">
+	    				<!--  LINKS -->        
+	        </div>
+        </div>
+    </div>
+</nav>
+
+
+
+-------------- LINKS
+li.nav-item>a[href="#"].nav-link
+
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+-------------- BUTTON 
+<button class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse" data-target="#topMenu"
+        aria-controls="topMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+============== HOME
+#home.jumbotron.jumbotron-fluid>.container>(h1.display-3{Home}+(p>lorem30)*2)
+
+<div class="jumbotron jumbotron-fluid" id="home">
+  	<div class="container">
+    	<h1 class="display-3">Home</h1>
+        <p>lorem30</p>
+        <p>lorem30</p>
+        <!-- LINK -->
+    </div>
+</div>
+
+
+
+--------------  LINK
+<p>
+   <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login">
+       My account
+   </a>
+ </p>
+
+
+ ============= Modal window
+
+ <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+             / ------ Form -----/
+        </div>
+    </div>
+</div>
+
+---------- Form
+
+<form>
+ <div class="modal-body">
+      <div class="form-group">
+        <label class="label-control">E-mail</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label class="label-control">Password</label>
+        <input type="text" class="form-control">
+    </div>
+ </div>
+ <div class="modal-footer justify-content-start">
+     <button type="button" class="btn btn-primary">Login</button>
+ </div>
+</form> 
+
+
+
+============== Services 
+
+<section id="services">
+    <div class="container-fluid">
+      <div class="page-header">
+           <h1>Our services <small>for you</small></h1>               
+      </div>
+
+       <div class="row"> /--------- 1 ----------- /  </div>
+       <div class="row"> /--------- 1 ----------- /  </div>
+       <div class="row"> /--------- 1 ----------- /  </div> 
+       <div class="row"> /--------- 1 ----------- /  </div>
+    </div>
+</section>
+
+----------------- 1
+(article.col-md-4.text-center>img.rounded-circle+p.lead+p.info>lorem20)*3
+
+<div class="col-md-4">
+    <img class="rounded-circle" src="i/icons/ico1.png">
+    <p class="lead">Prototyping</p>
+    <p class="info">lorem20</p>
+</div>
+
+==============  Testimonials
+
+#testimonials.jumbotron.jumbotron-fluid>.container>(h1.display-3{Testimonials}+(blockquote>lorem30)*4)
+
+<div class="jumbotron jumbotron-fluid" id="testimonials">
+	<div clas="container">
+      <h1>Testimonials</h1>
+       <blockquote>lorem30</blockquote> 
+       <blockquote>lorem30</blockquote>
+       <blockquote>lorem30</blockquote>
+       <blockquote>lorem30</blockquote>
+   </div>
+</div>
+
+============== Team
+#team>.container-fluid>.page-header>(h1+.row*3)
+
+<div id="team">
+   <div class="container-fluid">
+		<div class="page-header">					   
+			  <h1>Our team <small>of experts</small></h1>	
+		</div>
+		<div class="row"> /--------- 1 ----------- /  </div>
+		<div class="row"> /--------- 1 ----------- /  </div>
+		<div class="row"> /--------- 1 ----------- /  </div>
+   </div>
+</div> 
+
+--------------- 1 
+(.col-md-3.text-center>img.rounded-circle[src="i/persons/person1.png"]+p.lead{CEO and Founder}+p.info>lorem30)*4
+
+<div class="col-md-3 text-cebter">					  
+    <img  class="rounded-circle" src="i/persons/person1.png">
+    <p class="lead">CEO and Co Finder</p>			      
+    <p class="info">lorem30</p>
+</div>
+
+
+============== Portfolio
+#portfolio.jumbotron.jumbotron-fluid>.container>(h1{Portfolio}+(p>lorem20)*3)
+
+<div class="jumbotron jumbotron-fluid"  id="portfolio">
+  <div class="container">
+    <h1>Portfolio</h1>
+      <p>lorem20</p>
+      <p>lorem20</p>
+      <p>lorem20</p>
+     <a href="#" class="btn btn-large btn-primary">Read more ...</a>
+  </div>
+</div>
+
+------------------- 1
+
+
+============== Contacts
+#contact>.container-fluid>.page-header>h1>small
+
+
+<div id="contact">
+   <div class="container-fluid">
+       <div class="page-header">				   
+            <h1>Contact as <small> any time</small></h1>		
+            /---  FORM  ---/	
+       </div>
+    </div>
+</div>
+
+
+----------- Form
+form>.form-group*3
+
+<form action="">					
+		1
+</form>
+
+------------ 1
+.form-group>(label.form-control-label+input.form-control)*4
+
+==============  Footer
+footer.bg-primary.pt-3.pb-3>.container-fluid>(a[href="#"]*6)
+
+<footer class="bg-primary pt-3 pb-3">
+    <div class="container-fluid">
+  	 <a href="#home">Home</a> |
+        <a href="#services">Services</a> |
+        <a href="#testimonials">Testimonials</a> |
+        <a href="#team">Team</a> |	
+        <a href="#portfolio">Portfolio</a> |
+        <a href="#contact">Contact</a>	
+   </div>
+</footer>
+
+
+==============  sass/layouts/_general.scss
+body {
+  font-family: $font-family-sans-serif;
+  font-weight:300;
+}
+.container-fluid{
+  max-width: 1200px;
+}
+.lead {
+  font-size:1.8em;
+}
+.info {
+  font-family: $font-family-serif;
+  font-weight:100;
+  font-size:1.2em;	padding:0 0  25px  0;
+}
+
+
+.btn-lg{
+  padding:16px 32px;
+}
+
+
+.form-control {
+  height: 50px;
+  padding:12px 24px;
+}
+
+
+==============  sass/layouts/_jumbotron.scss
+.jumbotron{
+  color: $grey;
+  margin-bottom: 0;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.jumbotron#home {
+  background:url(#{$imgPath}img1.jpg) no-repeat  right 0 fixed;
+  background-size: cover;
+}
+.jumbotron#testimonials {
+  background:url(#{$imgPath}img2.jpg) no-repeat right 0 fixed;
+  background-size: cover;
+}
+.jumbotron#portfolio {
+  background:url(#{$imgPath}img3.jpg) no-repeat right 0 fixed;
+  background-size: cover;
+}
+.jumbotron h1 {
+  margin-bottom:40px;
+}
+
+
+#services {
+  background: $servicesBgColor;
+}
+#team {
+   background: $teamBgColor;
+ }
+#contact {
+  background: $contactBgColor;
+}
+#services,
+#team,
+#contact {
+  text-align:center;
+  color: $grey;  
+  padding:48px;
+}
+#services .page-header small,
+#team .page-header small,
+#contact .page-header small {
+  color:$grey;
+}
+
+#team img {
+  width:80%;
+}
+#team img,
+#services img {
+  border-radius: 50%;
+  border: 8px solid $imgBorder;
+  margin:5px;
+}
+#team img:hover,
+#services img:hover {
+  opacity: .8;
+}
+
+
+blockquote:before{
+  content:  "\201c";
+}
+blockquote:after{
+  content: "\201d";
+}
+
+
+==============  Tooltip 
+img add 
+data-toggle="tooltip" data-placement="bottom" title="Tooltip on top"
+
+<script>
+  $(function () {
+    $('#team img').tooltip()
+})
+</script>
+
+============== Scroll
+http://github.com/cferdinandi/smooth-scroll
+data-scroll to link
+
+<script>
+smoothScroll.init();
+</script>
+
+============== 
+function mouseHandler(e){
+        let target = e.target;
+        if(target.nodeName.toLowerCase() !== 'img') {
+            return;
+        }
+        let temp = target.src;
+        switch(e.type) {
+            case "mouseover":
+                target.src = temp.slice(0, temp.indexOf('.png')) + "-h.png";
+                break;
+            case "mouseout":
+                target.src = temp.slice(0, temp.indexOf('-h.png')) + ".png";
+                break;
+        }
+}
+============== 

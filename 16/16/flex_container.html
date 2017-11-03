@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox demo</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" media="screen">
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2%;
+            line-height: 1.6;
+        }
+        .flex-container {
+            margin: 1em 0;
+            border: 1px solid #333;
+		}
+        .box{
+
+        }
+    </style>
+</head>
+<body>
+<section class="flex-container">
+        <div class="box"><h3>one</h3></div>
+        <div class="box"><h3>two</h3></div>
+        <div class="box"><h3>three</h3></div>
+<!--
+        <div class="box"><h3>four</h3></div>
+        <div class="box"><h3>five</h3></div>
+        <div class="box"><h3>six</h3></div>
+        <div class="box"><h3>seven</h3></div>
+        <div class="box"><h3>eight</h3></div>
+        <div class="box"><h3>nine</h3></div>
+        <div class="box"><h3>ten</h3></div>
+-->
+ </section>
+
+<!--
+1. Задаем элементу с классом flex-container свойство display: flex;
+Что произойдет ? 
+- элементы внутри этого контейнера становятся элементами flex-item, 
+  выстраиваются в один ряд,  их ширина определяется шириной контента
+- можно также им задавать padding, border, margin как обычным элементам
+
+2. flex-direction меняет направление осей (по умолчанию row)
+    поставить row-reverse,  column, column-reverse    
+	 
+3. Если элементов в контейнере много, и их общая ширина превышает 
+   ширину контейнера, то при flex-wrap: nowrap будет переполнение
+   контейнера 
+   Раскомментировать элементы в контейнере
+   Поставить контейнеру flex-wrap: nowrap  -> элементы начнут переносится
+ 	
+ -->
+
+ 
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Java Sctipt training</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>JavaScript training</h2>
+<div id="result"></div>
+<script>
+/* types - undefined, null, boolean, number, string */
+/*
+--------------------------------------------------------
+Тип        ! приводится в  true  ! приводится в  false |
+--------------------------------------------------------
+boolean    !  true               !     false           |
+--------------------------------------------------------
+string     ! непустая строка     !       ""            | 
+--------------------------------------------------------
+number     !  ненулевое число    !      0, NaN         |
+--------------------------------------------------------
+object     ! любой   object      !       null          |
+--------------------------------------------------------
+undefined  !   n/a               !     undefined       | 
+--------------------------------------------------------
+*/
+
+var valNeg = Number.NEGATIVE_INFINITY;
+var valPos = Number.POSITIVE_INFINITY;
+
+var val = valPos + valPos;
+document.write("<br>" + valPos + " + " + valPos + " = " + val);
+var val = valPos + valNeg;
+document.write("<br>"+ valPos + " + " + valNeg + " = " +  val);
+var val = valNeg + valNeg;
+document.write("<br>"+ valNeg +" + " +  valNeg +" = " +  val);
+var val = valNeg + valPos;
+document.write("<br>" + valNeg +" + "+ valPos + " = " +  val);
+
+var val = valPos - valPos;
+document.write("<br><br>"+ valPos +" - "+ valPos+ " = " +  val);
+var val = valPos - valNeg;
+document.write("<br>"+ valPos +" - " + valNeg + " = " +  val);
+var val = valNeg - valNeg;
+document.write("<br>" + valNeg +" - "+ valNeg +" = " +  val);
+var val = valNeg - valPos;
+document.write("<br>" + valNeg + " - " + valPos + " = " +  val);
+
+
+var val = valPos * valPos;
+document.write("<br><br>"+ valPos +" * "+ valPos+ " = " +  val);
+var val = valPos * valNeg;
+document.write("<br>"+ valPos +" * " + valNeg + " = " +  val);
+var val = valNeg * valNeg;
+document.write("<br>" + valNeg +" * "+ valNeg +" = " +  val);
+var val = valNeg * valPos;
+document.write("<br>" + valNeg + " * " + valPos + " = " +  val);
+
+var val = valPos / valPos;
+document.write("<br><br>"+ valPos +" / "+ valPos+ " = " +  val);
+var val = valPos / valNeg;
+document.write("<br>"+ valPos +" / " + valNeg + " = " +  val);
+var val = valNeg / valNeg;
+document.write("<br>" + valNeg +" / "+ valNeg +" = " +  val);
+var val = valNeg / valPos;
+document.write("<br>" + valNeg + " / " + valPos + " = " +  val);
+
+var val = valPos % valPos;
+document.write("<br><br>"+ valPos +" % "+ valPos+ " = " +  val);
+var val = valPos % valNeg;
+document.write("<br>"+ valPos +" % " + valNeg + " = " +  val);
+var val = valNeg % valNeg;
+document.write("<br>" + valNeg +" % "+ valNeg +" = " +  val);
+var val = valNeg % valPos;
+document.write("<br>" + valNeg + " % " + valPos + " = " +  val);
+
+
+
+</script>
+
+</div><!-- /.container -->           
+</body>
+</html>

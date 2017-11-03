@@ -1,0 +1,12 @@
+http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
+
+
+<i class="icon ion-bonfire"></i>
+
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<i class="fa fa-google-plus" aria-hidden="true"></i>
+<i class="fa fa-instagram" aria-hidden="true"></i>
+
+<i class="fa fa-chevron-left" aria-hidden="true"></i>
+<i class="fa fa-chevron-right" aria-hidden="true"></i>

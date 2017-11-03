@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #000 url(../i/bg.jpg) no-repeat right 0;
+    background-size: cover;
+    color: #6e7f7b;
+    font-family: Ubuntu, sans-serif;
+    font-size: 13px;
+}
+.container {
+    width: 340px;
+    margin: 35px auto;
+    background: white;
+}
+.header-box {
+    background: #eee4aa;
+    padding: 0 25px;
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+.header-title {
+    float: left;
+}
+.header-box__price {
+    float: right;
+}
+.header-title__title {
+    font-size: 14px;
+    margin: 0;
+    padding-top: 20px;
+}
+.header-title__content {
+    margin: 0;
+    text-transform: uppercase;
+}
+.header-box__price {
+    font-size: 36px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+.form-box {
+    padding: 0 25px;
+}
+.form-group {
+    margin-bottom: 28px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+input[type='text'] {
+    padding: 8px 10px;
+    width: 100%;
+    border: 1px solid #b4c1c4;
+}
+input[type='text']:focus {
+    border-color: #7fcddf;
+}
+input.form-control-cvs {
+    width: 56px;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px;
+
+}
+.btn-success {
+    border: 0;
+    background: #26b167;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+select {
+    padding: 8px 0;
+    border: 1px solid #b4c1c4;
+}
+select:focus {
+    border-color: #7fcddf;
+}
+
+.select-month {
+    width: 175px;
+   margin-right: 12px;
+}
+.select-year {
+    width: 96px;
+}

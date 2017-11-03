@@ -1,0 +1,28 @@
+html {
+  font-size: $baseFontSize; // 16px
+}
+
+body {
+  font-family: $raleway, sans-serif;
+  font-size: rem(17px);
+}
+.conteiner{
+  max-width: $maxWidth;
+  margin: auto;
+  padding: 0 12px;
+}
+.flex{
+  @include display(flex);
+}
+.conteiner-fluid{
+  width: 100%;
+}
+.img-fluid {
+  max-width: 100%;
+  width: 100%;
+}
+.hidetitle{
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}

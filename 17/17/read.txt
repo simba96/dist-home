@@ -1,0 +1,50 @@
+
+CSS properties for svg
+https://www.w3.org/TR/SVG/propidx.html
+
+============ Inline sprite
+ <svg style="display:none;">
+      <symbol id="iconCreate" viewBox="0 0 200 200">
+        <path  .... />
+      </symbol>
+      <symbol id="iconUse" viewBox="0 0 200 200">
+        <path  .... />
+      </symbol>
+      <symbol id="iconTopics" viewBox="0 0 200 200">
+        <path  .... />
+      </symbol>
+</svg>
+
+/* ===   usage  */ 
+<svg class="myclass">
+      <use xlink:href="#iconTopics" />
+</svg>
+
+============================      SVG Fragments
+<div class="service-box__img">
+  <img src="i/svg-sprite.svg#svgView(viewBox(0, 0, 200, 200))" alt="Icon Create" class="myclass" />
+</div>
+<img src="i/svg-sprite.svg#svgView(viewBox(200, 0, 200, 200))" alt="Icon Create" class="myclass" />
+
+<img src="i/svg-sprite.svg#svgView(viewBox(400, 0, 200, 200))" alt="Icon Create" class="myclass" />
+
+
+.service-box__img {
+   width: auto;
+}
+
+.myclass {
+  width: 200px;
+  height: 200px;
+}
+
+================ Background  http://www.grumpicon.com/
+.service-box__img {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.service-box__img_first {
+   background-image: url('data:image/svg+xml; .....);
+}

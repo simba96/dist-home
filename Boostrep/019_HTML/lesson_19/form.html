@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  [type='button'] {
+      margin-right: 1em;
+  }
+</style>
+<body>
+
+<div class="container pt-5">
+
+    <div class="row">
+        <form>
+            <div class="form-group">
+                <label for="name" class="form-control-label">Name</label>
+                <input class="form-control" type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-control-label">Password</label>
+                <input class="form-control" type="text" id="password">
+            </div>
+            <div class="form-group">
+                <label for="lang">Choose lang</label>
+                <select id="lang" class="form-control">
+                    <option value="1">ua</option>
+                    <option value="1">en</option>
+                    <option value="1">ru</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control-label">Select count</label>
+                <div class="form-check">
+                    <label class="form-check-label" for="one">
+                        <input class="form-check-input"  name="cnt" type="checkbox" id="one">
+                        one
+                   </label>
+                    <label class="form-check-label" for="two">
+                        <input class="form-check-input"  name="cnt" type="checkbox" id="two">
+                        two
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control-label">Gender</label>
+                <div class="form-check">
+                    <label class="form-check-label" for="male">
+                        <input class="form-check-input"  name="gender" type="radio" id="male">
+                        Male
+                    </label>
+                    <label class="form-check-label" for="famale">
+                        <input class="form-check-input"  name="gender" type="radio" id="famale">
+                        Female
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="text" class="form-control-label">Message</label>
+                <textarea id="text" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary">Send</button>
+            </div>
+
+        </form>
+    </div>
+
+
+</div> <!-- /.container-->
+</body>
+</html>

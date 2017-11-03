@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Бинарные операторы</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Бинарные операторы</h2>
+<div id="result"></div>
+<script>
+/*-- 
+var d1 = 10, d2 = 20; // не удалять
+var result = d1 + d2; // не удалять
+
+document.write("result = " + result);
+document.write("<br> d1 = " + d1  + "<br> d2 = "  + d2);  
+// значения  d1 и  d2 не изменилось  
+----------------------------------------- */
+ 
+/*   
+Это говорит о том что в выражение суммы  переменные d1 и d2 были скопированны 
+То есть были созданны временные переменные, значения которых равны d1 и d2 соответственно, 
+с их помощью была посчитана сумма, которая была записана в переменную result, 
+и затем временные переменные были уничтожены.
+А оригинальные переменные d1 и d2 остались без изменения
+*/
+
+/*
+d1 = 10;
+d1++;               //  postfix increment
+document.write("<br> d1 = " + d1);
+d1 = 10;
+++d1;               //  prefix increment
+document.write("<br> d1 = " + d1);
+*/
+
+/*
+d2 = 10;
+d2--;             //  postfix decrement
+document.write("<br> d2 = " + d2);
+d2 = 10;
+--d2;             //  prefix decrement
+document.write("<br> d2 = " + d2);
+*/
+
+
+/*
+d1= 10; d2 = 20;
+// используется prefix increment, поэтому сначала на 1
+// увеличится d1  а потом к нему прибавится d2
+result =  ++d1 +  d2; 
+document.write("<br> result = " + result); // 31
+
+d1= 10; d2 = 20;
+result =  d1++ + d2;
+document.write("<br> result = " + result);  //30
+*/
+
+
+/*
+d1 = 10;
+d2 = 20; 
+result = --d1 + d2;
+document.write("<br> result = " + result);
+document.write("<br> d1 = " + d1  + "<br> d2 = "  + d2);  
+*/
+
+/*
+!!!  Значения  d1 и  d2  изменилось.   Это говорит о том, что 
+     при операциях декремента и инкремента меняется значение переменной
+*/
+
+
+/* == Операции  ++ и -- можно применять к операндам любого типа ===== */
+
+/* -- 
+ // Строка содержит число
+
+var st = "20";
+st++;
+document.write(st);
+
+st = "10";
+st--;
+document.write("<br>" + st);
+------------------------- */
+
+/* --- 
+// Если строка содержит не только цифры, то результат NaN
+d1 = "12string";
+d1++;
+document.write("<br> d1 = " + d1); // NaN
+ --------------------------------*/
+
+/*--- 
+// Тип boolean (true -> 1, false -> 0)
+d1 = true;
+d1++;
+document.write("<br> d1 = " + d1); // true ->  1++   будет   2
+d1 = false;
+d1++;
+document.write("<br> d1 = " + d1); // true ->  0++   будет   1
+ --------------------------------*/
+ 
+/* ---  
+d1 = 1.1;
+d1++;
+document.write("<br> d1 = " + d1); // 2.1
+
+ --------------------------------*/
+
+/*
+Объект -  вызывается метод valueOf(),
+возвращаемое им значение  приводится к числу
+по правилам функции Number(),
+ и затем   применяется операция декремента(инкремента)
+*/
+ 
+/*---  
+var d1 = { 
+    valueOf: function() {
+        return -1;
+    }
+};
+d1--;
+document.write("<br> d1 = " + d1); //  -2
+ -----------------------------*/
+ 
+/*--  
+
+var d1 = { 
+    valueOf: function() {
+        return "100";
+    }
+};
+d1++;
+document.write("<br> d1 = " + d1); //  101
+------------------------------ */
+
+/*-- 
+var d1 = { 
+    valueOf: function() {
+        return "hello";
+    }
+};
+d1++;
+document.write("<br> d1 = " + d1); // NaN
+ ------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</div><!-- /.container -->
+</body>
+</html>

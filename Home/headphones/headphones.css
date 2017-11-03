@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clearfix ::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    margin: auto;
+    max-width: 1305px;
+    height: 724px;
+    font-family: 'Open Sans', sans-serif;
+}
+.box{
+    padding-top: 57px;
+   width: 50%;
+    float: left;
+    text-align: right;
+}
+.box_2{
+    padding-top: 70px;
+    float: right;
+    width: 50%;
+    text-align: right;
+
+}
+.box-item__title_3{
+    padding-top: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+.box_class{
+    padding-bottom: 130px;
+    padding-left: 210px;
+    letter-spacing: -2px;
+    text-align: left;
+
+}
+.produck{
+    padding-left: 44px;
+}
+.box-item__title_1{
+font-weight: 700;
+    font-size: 100px;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+    margin-bottom: 57px;
+
+}
+.box-item__title_2{
+padding-left: 205px;
+    opacity: 0.5;
+}
+
+#beets{
+    padding-right: 190px;
+}
+.box-item__title_4{
+    padding-right: 210px;
+    opacity: 0.5;
+
+}

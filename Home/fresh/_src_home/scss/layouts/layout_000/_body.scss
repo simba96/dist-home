@@ -1,0 +1,37 @@
+.conteyner1{
+  padding: 1px 0;
+  max-width: 90%;
+  margin: auto;
+  //padding: 165px;
+  background: #00b5b5;
+  @include display(flex);
+  //@include flex-direction(column);
+  position: relative;
+  color :white;
+  font-size: 17px;
+
+}
+.right {
+  flex: 1;
+  //@include display(flex);
+  //@include flex-direction(column);
+  //@include align-items(flex-end);
+ //margin-left: 560px;
+ // padding-top: 5px;
+ // display: block;
+ // width: 500px;
+}
+.body-title{
+  font-size: 90px;
+}
+.img-fluid{
+  max-width: 100%;
+  width: 100%;
+}
+.ass{
+  //position: absolute;
+  flex: 1;
+  //top :18px;
+  //left: 19px;
+  order: -1;
+}

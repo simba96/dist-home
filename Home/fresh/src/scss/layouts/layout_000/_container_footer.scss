@@ -1,0 +1,29 @@
+.footer{
+  background-color: #262626;
+  color: #b9b9b9;
+}
+.container-footer{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+   @include e(text){
+     //color: #b9b9b9;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 25px;
+   }
+  @include e(text2){
+    //color: #b9b9b9;
+    font-family: Pacifico;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+.footer_a{
+  color: #ff2b58;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+}

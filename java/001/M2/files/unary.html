@@ -1,0 +1,118 @@
+<!doctype html >
+<html>
+ <head>
+    <title>Унарные операции </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Унарные операции </h2>
+<div id="result"></div>
+
+
+<script>
+
+
+var d1, d2, result; // dont't remove
+var mx = Number.MAX_VALUE + 100;
+var mn = Number.MIN_VALUE - 100
+
+/* ========================   ========================= */
+
+/*
+d1 = 10; 
+d2 = 20;
+d1 += d2;
+document.write("<br>" + d1);
+*/
+
+/*
+d1 = 10; 
+d2 = 20;
+d1 -= d2;
+document.write("<br> d1 = " + d1);
+*/
+
+/*
+d1 = 10; 
+d2 = 20;
+d1 %= d2;
+document.write("<br> d1 = " + d1);
+*/
+
+
+/* =====================  Modules  ========================= */
+/*
+d1 = 5;
+result = d1 % mx;  // возвратит делимое
+document.write("<br> d1 % Infinity =  " + result);  
+*/
+
+
+/* =====================  Adding  ========================= */
+/*
+d1 = 5;
+d2 = 10;
+result = "This is sum d1 + d2 = " + d1 + d2;  // все будет переведено в строку
+document.write("<br>" + result);  
+
+result = "This is sum d1 + d2 = " +  (d1 + d2); 
+document.write("<br>" + result); 
+*/
+
+
+/* =====================  Subtract  ========================= */
+/*
+d1 = 5;
+d2 = true;
+result = d1 - d2; // 4 так как true приводится к  1 
+document.write("<br> 5 - true = " + result);  
+
+
+d1 = NaN;
+d2 = 1;
+result = d1 - d2; // NaN
+document.write("<br> Nan - 1 = " + result);  
+
+
+d1 = 5;
+d2 = "";
+result = d1 - d2; //  5 так как ""  приводится к  0 
+document.write("<br> 5 - '' = " + result);  
+
+
+d1 = 5;
+d2 = "2";
+result = d1 - d2; //  3 так как  "2"  приводится к  2 
+document.write("<br> 5 - '2' = " + result);  
+
+
+d1 = 5;
+d2 = null;
+result = d1 - d2; //  5 так как null  приводится к  0 
+document.write("<br> 5 - null = " + result);  
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</div><!-- /.container -->
+</body>
+</html>

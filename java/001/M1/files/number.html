@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <title> Тип Number </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Тип Number</h2>
+<div id="result"></div>
+ 
+<script>
+
+var decimal = 43;
+document.write(decimal);
+
+
+
+// дробные числа имеющие более 5 знаков после запятой представляются в е-форме (экспонента)
+
+//document.write("<br><br>Число 0.00007 имеет 5 знаков после запятой - ");	  
+//document.write(0.00007);
+
+//document.write("<br><br>Число 0.000007 имеет 6 знаков после запятой - ");	  
+//document.write(0.0000007);
+
+
+
+
+// точность вычислений может оставляет желать лучшего 
+/*
+var a = 0.1; 
+var b = 0.2;
+document.write("<br><br><br> Складываем 0.1 + 0.2 = ");	  
+document.write(a + b);
+*/
+
+/*
+a = 0.05; b = 0.25;
+document.write("<br> Складываем 0.05 + 0.25 = ");	  
+document.write(a + b);
+a = 0.15; b = 0.15;
+document.write("<br> Складываем 0.15 + 0.15 = ");	  
+document.write(a + b);
+*/ 
+ 
+ /* =====  Диапазон чисел  =============== */ 
+/*
+Диапазон возможных числовых значений определяется 
+Number.MAX_VALUE и Number.MIN_VALUE
+Значениям которые больше Number.MAX_VALUE присваивается  Infinity	 
+Значениям которые меньше Number.MIN_VALUE  присваивается -Infinity
+*/
+
+/*
+document.write("<h1>Диапазон чисел</h1>");
+document.write("<br> Number.MAX_VALUE = " + Number.MAX_VALUE);	  
+document.write("<br> Number.MAX_VALUE = " + Number.MIN_VALUE);	  
+ 
+var result = Number.MAX_VALUE + Number.MAX_VALUE;
+document.write("<br><br>" + result);
+result = 5/0;
+document.write("<br>" + result);
+result = -5/0;
+document.write("<br>" + result);
+*/
+
+
+
+/*
+С помощью функции  isFinite() можно определять лежит ли число в 
+допустимых пределах. 
+*/
+
+/*
+result = 5/0;
+document.write("<br><br>" +  result +  " -> "  + isFinite(result));  //false 
+result = -5/0;
+document.write("<br>" +  result +  " -> "  + isFinite(result));  //false 
+*/
+
+
+</script>
+</div> <!-- /.container-->
+</body>
+</html>

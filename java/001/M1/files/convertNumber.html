@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <title>Приведение типа Number к другому типу </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Приведение типа Number к другому типу</h2>
+<div id="result"></div>
+<script>
+/* Преобразование с помощью функции Number()
+
+--------------------------------------------------------
+Тип        !                                           |
+--------------------------------------------------------
+boolean    !  true -> 1    false -> 0                  |
+--------------------------------------------------------
+string     !   "123" -> 123                            | 
+           !   "00123" -> 123                          | 
+		   !   "1.45" -> 1.45                          | 
+		   !   "0001.23" -> 1.23                       | 
+		   !   "0xf" ->  15                            | 
+		   !   "" ->    0                              | 
+		   !   "a123" -> NaN   "1a" -> NaN             | 
+--------------------------------------------------------
+null       !      0                                    |
+--------------------------------------------------------
+object     !  valueOf() и приведение к числу           |
+           !  если нет valueOf() то  toString()        | 
+--------------------------------------------------------
+undefined  !     NaN                                   | 
+--------------------------------------------------------
+*/
+ 
+document.write("<br> Тип null -> " + Number(null));	  // 0
+document.write("<br> Тип undefined -> " + Number(undefined));	// NaN  
+document.write("<br> Строка '1' -> " + Number("1"));	  // 1
+document.write("<br> Строка '0000010' -> " + Number("0000010"));	  //10
+document.write("<br> Строка '-010' -> " + Number("-010"));	  //-10
+document.write("<br> Строка '01.23' -> " + Number("01.23"));	  //-10
+document.write("<br> Строка '0xf' -> " + Number("0xf"));	  //15
+document.write("<br> Пустая строка '' -> " + Number(""));	  // 0
+document.write("<br> Строка 'test' -> " + Number("test"));	  // NaN
+document.write("<br> Строка 't123' -> " + Number("t123"));	  // NaN
+
+/* Преобразование с помощью функции parseInt()*/
+/*
+parseInt()
+ - первый символ не цифра, не знаки  + или -  возвращает NaN
+ - ""   возвращает NaN (Number() возвращает 0)
+ - распарсивается строка до первого символа не явл. числом
+     parseInt("14.45")  -> 14
+	 parseInt("012")   ->  10
+	 parseInt("0xf")   -> 15
+	 parseInt("10", 16)  ->  26
+*/
+
+ /* 
+document.write("<br><h1>Преобразование с помощью функции parseInt()</h1>");	  
+document.write("<br> Строка '123455'  ->   " + parseInt("123455"));	//123455
+document.write("<br> Строка '-12'  ->   " + parseInt("-12"));	//-12
+document.write("<br> Строка \"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;333\"  ->   " + parseInt("   333"));	//333
+document.write("<br> Пустая строка ''  ->   " + parseInt(""));	//NaN
+document.write("<br> Cтрока 't123'  ->   " + parseInt("t123"));//NaN	
+document.write("<br> Cтрока '123blue'  ->   " + parseInt("123blue"));//123	
+document.write("<br> Cтрока '00123'  ->   " + parseInt("00123"));	// 8-ричное число 83
+document.write("<br> Cтрока '0xa'  ->   " + parseInt("0xa"));	// 16-ричное число 10
+
+document.write("<br><br>Cтрока '0xAF'  ->   " + parseInt("0xAF"));	// 16-ричное число 75
+document.write("<br>Cтрока 'AF'  ->   " + parseInt("AF", 16));	// 16-ричное число 75
+document.write("<br>Cтрока 'AF'  ->   " + parseInt("AF"));	// NaN
+document.write("<br>Cтрока '7'  ->   " + parseInt("10", 2));	// 111
+document.write("<br>Cтрока '7'  ->   " + parseInt("10", 8));	// 111
+document.write("<br>Cтрока '7'  ->   " + parseInt("10", 10));	// 111
+*/
+
+
+/* Преобразование с помощью функции parseFloat()*/
+/*
+parseFloat("123.45.67")  -> 123.45
+parseFloat("123test")  ->  123
+parseFloat("0xf")   -> 0
+*/
+
+ /* 
+document.write("<h1>Преобразование с помощью функции parseFloat() </h1>");	  
+document.write("<br> Строка '12.3455'  ->   " + parseFloat("12.3455"));	//12.3455
+document.write("<br> Строка '12.34.55'  ->   " + parseFloat("12.34.55"));	//12.34
+document.write("<br> Строка '12test'  ->   " + parseFloat("12test"));	//12
+document.write("<br> Строка '0012.44'  ->   " + parseFloat("0012.44"));	//12
+document.write("<br> Строка '0xf'  ->   " + parseFloat("0xf"));	//0
+document.write("<br> Строка 'test123'  ->   " + parseFloat("test123"));	// NaN
+
+*/
+
+
+
+
+
+</script>
+</div><!-- /.container -->
+</body>
+</html>

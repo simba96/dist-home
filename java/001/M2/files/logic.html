@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Logical operators</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Logical operators</h2>
+<div id="result"></div>
+
+<script>
+
+var d1, d2, result; // не удалять
+
+/*  ===============   Logical NOT  ==================== 
+     "", NaN, 0, null, indefined  -> true;
+	Infinity, число не равное 0,  object  -> false;
+*/
+
+
+/*
+d1 = "";
+document.write("<br> d1= пустая строка  -> " + !d1);
+d1 =  {}
+document.write("<br> d1 = object  -> " + !d1);
+d1 =  "string";
+document.write("<br> d1 = 'string' -> " + !d1);
+d1 =  0;
+document.write("<br> d1 = 0 -> " + !d1);
+d1 =  100;
+document.write("<br> d1 = 100 -> "  + !d1);
+d1 =  NaN;
+document.write("<br> d1 = NaN -> " + !d1);
+d1 =  null;
+document.write("<br> d1 = null -> " + !d1);
+d1 =  undefined;
+document.write("<br> d1 = undefined -> " + !d1);
+*/
+
+/*  ===============  Double Logical NOT  ==================== */
+/*
+d1 = 'blue';
+document.write("<br> d1 = !!'blue' -> " + !!d1); //true
+d1 = 0;
+document.write("<br> d1 = !!0 -> " + !!d1); //false
+d1 = NaN;
+document.write("<br> d1 = !!NaN -> " + !!d1);
+d1 = '';
+document.write("<br> d1 = !!'' -> " + !!d1);
+d1 = 123245;
+document.write("<br> d1 = !!12345 -> " + !!d1);
+*/
+
+/*  ===============  Logical AND  ==================== 
+Операция всегда пытается возвратить второй операнд !!!
+
+-------------------------------------------------------------
+							  ! Какой   операнд возвратится |
+-------------------------------------------------------------
+Первый операнд – object       !   второй операнд            |
+-------------------------------------------------------------
+Второй операнд – object       !   Если первый true то       |
+                              !   второй, иначе - первый    |
+-------------------------------------------------------------
+Оба операнда object           !   второй операнд            |
+-------------------------------------------------------------
+Любой из операндов null       !         null                |
+Любой из операндов undefined  !      undefined              |
+Любой из операндов   NaN      !         NaN                 |
+------------------------------------------------------------     */
+
+/*
+d1= 0;  // интерпретируется  как false
+d2 = 23;  // интерпретируется  как  true
+result = d1 && d2; // логический результат равен false,  соответствует числу 0  
+document.write("<br>  0 && 23 -> " + result); 
+*/
+
+
+/*
+d1= {};  //  Это объект
+d2 = 23;  // интерпретируется  как  true
+result = d1 && d2; // вернется второй операнд
+document.write("<br> object && 23 -> " + result); 
+*/
+
+
+/*
+d1= 0;  //  интерпретируется  как false
+d2 = {   //    Это объект
+	valueOf:function() {
+        return "hello";
+    }
+};       
+result = d1 && d2;    // вернется 0
+document.write("<br> 0 && object -> " + result); 
+*/
+
+/*
+d1= 1;  //  интерпретируется  как true
+d2 = {   //  Это объект
+	valueOf:function() {
+        return "hello";
+    }
+};  
+result = d1 && d2; // вернется второй объект (то есть строка "hello")
+document.write("<br> object && object -> " + result); 
+*/
+
+
+/*
+d1= {};  //  Это объект
+d2 = { //  Это объект
+	valueOf:function() {
+        return "hello";
+    }
+};  
+result = d1 && d2; // вернется второй объект (то есть строка "hello")
+document.write("<br> object && object -> " + result); 
+*/
+
+/*
+d1= NaN;   
+d2 = true;
+result = d1 && d2;
+document.write("<br> NaN && true -> " + result); 
+
+
+d1= undefined;   
+d2 = true;
+result = d1 && d2;
+document.write("<br> undefined && true -> " + result); 
+*/
+
+
+
+/* вычисление логического выражения осуществляется слева направо 
+	Поэтому для оператора && если первый операнд = false, 
+	то второй не анализируется а сразу возвращается результат false
+*/
+/*
+d1=true;
+result = d1 && val;  // будет ошибка так как переменная val не определена 
+document.write("<br> d1 && неопределенная переменная -> " + result); 
+console.log(result);
+*/
+/* В этом случае первый операнд поэтому второй операнл 
+    не анализируется и результат false 
+*/
+/*
+d1=false;
+result = d1 && val;  // будет ошибка так как переменная val не определена 
+document.write("<br> d1 && неопределенная переменная -> " + result); 
+console.log(result);
+*/
+
+
+/*  ===============  Logical OR  ==================== 
+Операция всегда пытается возвратить первый операнд
+-------------------------------------------------------------
+							  ! Какой   операнд возвратится |
+-------------------------------------------------------------
+Первый операнд – object       !   первый операнд            |
+-------------------------------------------------------------
+Второй операнд - object       !   первый операнд
+
+но если первый операнд  false !   второй операнд            |
+-------------------------------------------------------------
+Оба операнда object           !   первый операнд            |
+-------------------------------------------------------------
+Оба операнда null             !         null                |
+Оба операнда undefined        !      undefined              |
+Оба операнда   NaN            !         NaN                 |
+------------------------------------------------------------     */
+
+
+
+
+/*
+d1= 0;  // интерпретируется  как false
+d2 = 20;  // интерпретируется  как  true
+result = d1 ||  d2;  // возвращается второй операнд
+document.write("<br>  0 || 20 -> " + result); 
+*/
+
+
+/*
+d1= 10;  // интерпретируется  как true
+d2 = 20;  // интерпретируется  как  true
+result = d1 ||  d2;  // возвращается первый операнд
+document.write("<br>  10 || 20 -> " + result); 
+*/
+
+
+/*
+d1= {  // объект 1
+	valueOf:function(){return "first Object";}
+};  
+d2 = { // объект 2 
+	valueOf:function(){return "second Object"; }
+};  
+result = d1 ||  d2;  // возвращается первый объект
+document.write("<br>  Object || Object  -> " + result); 
+*/
+
+/*
+d1= NaN; 
+d2 = 20; 
+result = d1 ||  d2;  // возвращается второй операнд
+document.write("<br>  NaN || 20 -> " + result); 
+
+d1= NaN; 
+d2 = NaN; 
+result = d1 ||  d2;  // возвращается NaN
+document.write("<br>  NaN || NaN-> " + result); 
+*/
+
+/*  для оператора ||  вычисление тоже проводится по кроткой схеме
+      если первый операнд =  true, то второй не анализируется 
+	  а сразу возвращается результат  true,
+ */
+
+/*
+d1=true;
+result = d1 || val;  // val не определена  но ошибки не будет 
+document.write("<br> d1 || неопределенная переменная -> " + result); 
+
+d1=false; //  будет ошибка  так как начнет анализироваться val которая не определена
+result = d1 || val;  // val не определена 
+document.write("<br> d1 ||  неопределенная переменная -> " + result); 
+*/
+
+
+</script> 
+
+
+</div><!-- /.container -->
+</body>
+</html>

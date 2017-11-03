@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox demo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2%;
+            line-height: 1.6;
+        }
+        .flex-container {
+            margin: 1em 0;
+            border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+<section class="flex-container">
+        <div class="box box__one"><h3>one</h3></div>
+        <div class="box box__two"><h3>two</h3></div>
+        <div class="box box__three"><h3>three</h3></div>
+ </section>
+
+<!--
+1. Горизонтально элементы выравниваются свойством 
+    justify-content: flex-start | flex-end | center | space- around | space-between
+
+2. Задать контейнеру высоту  height: 500px;
+   Задать контейнеру flex-direction: columns
+   И снова применить свойство justify-content   
+
+3. Убрать у контейнера свойство flex-direction: columns   
+   Вертикальное выравнивание задается свойством
+   align-items: stretch | flex-start | flex-end | center | baseline
+
+4. Задать контейнеру flex-direction: columns
+   И снова применить свойство align-items
+
+5. Задать контейнеру flex-direction: columns; align-items: center; 
+   Задать лементу box__one свойство self-align: flex-start
+   Задать лементу box__three свойство self-align: flex-start
+   
+   
+ -->
+
+ 
+</body>
+</html>

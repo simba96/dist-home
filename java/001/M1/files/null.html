@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title> Тип NULL </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2>Тип NULL</h2> 
+<script>
+
+/* Тип Null имеет одно значение null. */
+
+var car = null;
+document.write( typeof car); // выведет object так как тип Null - это пустой объект
+
+/* Особенность -  сравнение undefined == null дает true  */
+document.write("<br>" + (undefined == null) ); // true
+
+
+/*
+То есть если есть неиницилизированная переменная и если ее
+напрямую сравнивать c null то мы будем получать  true
+А ведь это не так, потому что null - это пустой объект, 
+а неиницилизированная переменная имеет тип undefined.
+*/
+
+// var someVal;
+// document.write("<br>someVal == null  -> " + (someVal == null) ); // true
+	  
+/*
+Таким образом 
+1. Надо при сравнении обязательно использовать оператор typeof 
+2. Изначально  неинициализированным переменным присваивать значение null
+   и проверять  как  typeof == "object"
+*/	  
+
+// Будет false
+//document.write("<br><br>typeof someVal == null  -> " + (typeof someVal == null) ); 
+
+
+//  Будет  true
+// var anotherVal = null;
+// document.write("<br>typeof anotherVal == null  -> " + (typeof anotherVal == "object") ); 
+
+
+
+// Будет false
+// anotherVal = "this is string";
+// document.write("<br>typeof anotherVal == null  -> " + (typeof anotherVal == "object") ); 
+
+
+
+
+
+
+
+
+
+
+</script>
+</div> <!-- /.container-->
+</body>
+</html>

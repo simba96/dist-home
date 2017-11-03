@@ -1,0 +1,39 @@
+.turquoise {
+  background: $turquoise;
+  padding: 88px 0;
+}
+
+.container-first {
+  @include display(flex);
+  @include align-items(center);
+
+  @include e(img) {
+    flex: 1;
+    padding-right:37px ;
+
+  }
+  @include e(content){
+    flex: 1;
+    padding: 0 40px;
+    display: block;
+margin-bottom: rem(85px);
+  }
+}
+.container-first{
+  color: #ffffff;
+  //line-height: rem(27px);
+
+  @include e(title){
+    font-size: rem(90px);
+    font-weight: 900;
+    padding-bottom: rem(7px);
+  }
+
+    @include e(text){
+      line-height: rem(27px);
+    }
+  }
+span{
+ display:block ;
+  padding-top: rem(10px);
+}

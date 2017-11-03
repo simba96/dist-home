@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datalist</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+<form>
+    <label for="field1">Type here: </label>
+    <input id="field1" type="text" autofocus>
+</form>
+<script>
+    // from http://sampsonblog.com/489/creating-a-autofocus-polyfill
+    (function () {
+        if ( document.createElement("input").autofocus === undefined ) {
+            var forms = document.forms, fIndex = -1;
+            while ( ++fIndex < forms.length ) {
+               var elements = forms[ fIndex ].elements, eIndex = -1;
+                while ( ++eIndex < elements.length ) {
+                    if ( elements[ eIndex ].attributes["autofocus"] ) {
+                        return false;
+                   }
+                }
+            }
+        }
+    }());
+</script>
+</body>
+</html>

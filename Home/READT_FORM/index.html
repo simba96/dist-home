@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Payment form</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-box">
+            <div class="header-title">
+                <h2 class="header-title__title">Harold Finch</h2>
+                <p class="header-title__content">Your Total</p>
+            </div><!-- /.header-title -->
+            <p class="header-box__price">$88</p>
+        </header>
+
+        <div class="form-box">
+            <form action="">
+                <div class="form-group">
+                    <label class="label-control">Credit card number</label>
+                    <input  class="form-control" type="text" placeholder="4122">
+                </div><!-- /.form-group -->
+
+                <div class="form-group">
+                    <label class="label-control">Expiration date</label>
+                    <select class="select-month" name="">
+                        <option value="-1">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                    </select>
+
+                    <select class="select-year" name="">
+                        <option value="-1">Year</option>
+                        <option value="1">2017</option>
+                        <option value="2">2018</option>
+                    </select>
+                </div><!-- /.form-group -->
+
+                <div class="form-group">
+                    <label class="label-control">CVV</label>
+                    <input  class="form-control form-control-cvs" type="text" placeholder="4122">
+                    <span>3 or 4 digits - view example</span>
+                </div><!-- /.form-group -->
+
+                <div class="form-group">
+                    <input class="btn btn-success" type="submit" value="Pay">
+                </div><!-- /.form-group -->
+
+                <p class="decor-link">
+                    <a href="#">Cancel order</a>
+                </p>
+
+
+
+
+            </form>
+        </div><!-- /.form-box-->
+
+    </div><!-- /.container-->
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+.services{
+  background:#70bfff url(#{$imgPath}second_img.png)
+  no-repeat calc(100% - 130px) 95px;
+  padding: 179px 80px 0;
+  position: relative;
+}
+.container-second {
+  @include display(flex);
+  @include align-items(center);
+  //flex-basis: 50%;
+
+  @include e(content) {
+    //flex: 1;
+    padding-bottom: 190px;
+    padding-right: 30px;
+    color: #ffffff;
+     font-size: 90px;
+     font-weight: 900;
+
+  }
+  @include e(item){
+    flex: 1;
+    .content-item {
+      position: relative;
+      height: rem(100px);
+      width: rem(400px);
+      padding:37px 87px 41px 0 ;
+      margin-bottom: 17px;
+      margin-left: 60px;
+      border: 1px solid transparent;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      background:#ffffff ;
+      text-align: center;
+
+      &:hover {
+        background: darken(#70bfff, 20%);}
+      &:last-child {
+        margin-bottom:rem(100px);
+      }
+    }
+
+  }
+}
+.second{text-decoration: none;
+  color: #262626;
+  font-size: rem(20px);
+  font-weight: 900;}
+
+.content-item::after {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background: #9d9d9d;
+  position: absolute;
+  top: 0;
+  right:98px;
+}
+.maket{
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-image: url(#{$imgPath}maket.png);
+ position: absolute;
+  left: 325px;
+  top: 22px;
+}
+.icon1{
+  background-position: -55px 0 ;
+}
+.icon2{
+  background-position: -115px 0;
+}
+.icon3{
+  background-position: -177px 0;
+}

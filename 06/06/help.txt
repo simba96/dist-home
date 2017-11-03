@@ -1,0 +1,23 @@
+1. width: 1240px;
+
+2. border-white: 25px
+
+3.  Colors
+   header  background 4a4f56, color eb7e7f,  font-size: 28px  20px
+   body  3b3f45
+
+   --- items
+        background 88839e, color: white
+        font-size: 22px, small -> 16px
+    :hover
+         background 625e77, border-width: 3px
+     :focus
+
+
+
+4. Panel
+   width: 800px
+
+
+5. footer
+     background 4a4f56, color eb7e7f

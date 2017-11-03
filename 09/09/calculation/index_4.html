@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Занятие 2 - HTML DOP 1</title>
+    <meta charset="utf-8">
+<style>
+
+.container {
+    width:400px;
+	height:400px;
+	margin:100px auto;
+	border:1px solid red;
+   position:relative;
+}
+.container p {
+    padding:10px 0;
+}
+.sized-block-outside-left {
+    width:220px;
+    background:#999;
+/*Блок выставить c помощью margins слева от родительского блока*/
+
+}
+.sized-block-outside-right {
+    width:220px;
+    background: #9da4e2;
+    /*Блок выставить c помощью margins справа от родительского блока*/
+
+}
+.sized-float-outside-left {
+    width:220px;
+    background: #b0ff0e;
+    float:left;
+    /*Блок выставить c помощью margins слева от родительского блока*/
+
+}
+.sized-float-outside-right {
+    width:220px;
+    background: #b1fff5;
+    float:left;
+    /*Блок выставить c помощью margins справа от родительского блока*/
+
+}
+
+</style>
+    </head>
+<body>
+
+ <!--   -->
+
+<div class="container">
+    <p class="sized-block-outside-left">Sized Block Outside Left</p>
+    <p class="sized-block-outside-right">Sized Block Outside Right</p>
+    <p class="sized-float-outside-left">Sized Float Outside Left</p>
+    <p class="sized-float-outside-right">Sized Float Outside Right</p>
+</div>
+ 
+
+
+
+
+
+</body>
+</html>

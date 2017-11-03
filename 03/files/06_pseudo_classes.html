@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Псевдоклассы</title>
+        <meta charset="utf-8">
+		<style>
+			label {display: block;}
+		</style>
+<style>
+
+</style>
+</head>
+<body>
+<!--    
+Задания:
+ - отобразить все ссылки зеленым цветом   color:green;
+ - отобразить посещенные ссылки красным цветом   color:red;
+ - отобразить активные ссылки  цветом   color:#65c;
+ -  Стилизировать ссылку c  class="myclass"   синим цветом
+    активную - yellow,   посещенную - #c65;
+ -  убрать подчеркивание у ссылок при наведении на них курсора мыши
+	     {text-decoration:none;}
+-  сделать фон поля ввода текста input цветом #ffc при получении им фокуса
+ - первый дочерний элемент списка UL c id="u1" отобразить красным цветом
+ -->
+
+<a href="http://google.com">первый пункт меню</a><br><br>
+<a href="http://yahoo.com">второй пункт меню</a><br><br>
+<a href="http://design-class.com.ua">третий пункт меню</a><br><br>
+<a href="http://ya.ru">четвертый пункт меню</a><br><br>
+<a class="myclass"   href="http://nulled.cc">Ссылка с классом myclass</a><br><br>
+ 
+ <ul id="u1">
+	<li>Первый</li>
+	<li>Второй</li>
+	<li>Третий</li>
+		<ul>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+		</ul>
+	<li>Четвертый</li>
+	<li>Пятый</li>
+</ul>
+<div id="d1"></div>
+
+<form>
+<div class="form-group">
+    <label for="">Name</label>
+	<input type="text" name="test" value="enter your name">
+</div>
+<div class="form-group">
+	<p>Select you age</p>
+    <label class="radio" for="f1">
+		<input type="radio" name="age" value="1" id="f1">less 18
+	</label>
+	<label class="radio" for="f2">
+		<input type="radio" name="age" value="2" id="f2">18 - 30
+	</label>
+	<label class="radio" for="f3">
+		<input type="radio" name="age" value="2" id="f3">more 30
+	</label>
+</div>
+
+</form>
+ 
+  
+ 
+	</body>
+</html>

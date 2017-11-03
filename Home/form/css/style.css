@@ -1,0 +1,82 @@
+html {
+    font: 16px Ubuntu,sans-serif;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(../img/bg1.png) repeat-x;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 60px;
+}
+.container{
+    background: white;
+    width: 461px;
+    height: 471px;
+    margin: auto;
+    padding: 0 31px;
+}
+.header-box {
+    display: block;
+position: relative;
+    padding-top: 7px;
+}
+.header-title__title{
+    font-size: 1.5rem;
+    padding-left: 39px;
+    padding-bottom: 15px;
+    padding-top: 16px;
+}
+.header-title__content{
+    padding-bottom: 29px;
+    font-size: 0.8125rem;
+    color: #b6b7b9;
+}
+.header-box__price{
+    position: absolute;
+    top: 27px;
+}
+input {
+    padding-left: 13px;
+    font-size: 0.875rem;
+    background: #f0f0f0;
+    border: 1px solid #f0f0f0 ;
+}
+.log{
+    color: red;
+    text-decoration: none;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-contro1__first{
+    height: 43px;
+    width: 190px;
+    margin-right: 10px;
+}
+.form-contro{
+    width: 194px;
+height: 43px;
+}
+.form-contro1{
+width: 100%;
+height: 43px;
+}
+.btn {
+    width: 100%;
+    height: 44px;
+    font-size: 1.125rem;
+    background: #ea355a;
+    color: white;
+    cursor: pointer;
+}
+.decor-link{
+    font-size: 0.75rem;
+    color: #a4a4a7;
+}

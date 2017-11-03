@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Значение Nan </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+ </head>
+<body>
+<div class="container">
+<h2> Анализируем  NaN - not a number</h2> 
+<div id="result"></div>
+<script>
+/*
+NaN - "not a number" это специальная числовая величина,
+ которая показывает что операция проводимая с числами 
+ не возвращает числовой результат, то есть не является числом 
+*/
+
+// Любая операция с самим значением NaN возвращает результат  = NaN
+document.write("<br>"  + NaN/10);
+	  
+// NaN не равно никакой величине, в том числе и самой NaN.
+document.write("<br>"  + (NaN == NaN) );	  
+
+/*
+Функция isNaN() принимает любой тип и определяет 
+является переданная величина “not a number”. 
+*/
+document.write("<br><br><h1>Not a Number</h1>");	  
+document.write("<br> Число 10 - " + isNaN(10)); //false	  
+document.write("<br> значение NaN - " + isNaN(NaN)); // true	  
+document.write("<br> Строка '10' - " + isNaN("10")); //false	  
+document.write("<br> Строка 'true' - " + isNaN("true")); //true	  
+document.write("<br> Значение true - " + isNaN(true)); //false
+
+ 
+
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Тип undefined </title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/assert.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Тип undefined </h2>
+<div id="result"></div> 
+<script>
+
+var message;
+document.write("<br>" + (message == undefined) );   //  выводится true			
+			  
+message = undefined;
+document.write("<br>" + message);  // выводится  undefined 
+ 
+  
+/*             
+var message; // Переменная определена но ей не присвоено значение
+document.write("<br>" + message);  // undefined
+document.write("<br>" + age);  //  ошибка так как такой переменной вообще нет
+*/	
+
+/* 
+//  Только один оператор  может работать с незадекларированной переменной - это typeof
+var message; 
+document.write("<br>" + typeof message);  // undefined
+document.write("<br>" + typeof age);  // undefined
+*/
+	  
+</script>
+
+
+
+</div>
+</body>
+</html>
